@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 75px;
+    margin-bottom: 2.5rem;
+}
+
+h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: lighter;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+h1 span{
+    color: hsl(209, 33%, 12%);
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+p{
+    color: hsl(209, 33%, 12%);
+    font-size: 13px;
+    margin-bottom: 2rem;
+}
+
+.user-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 2rem;
+}
+
+.input-alert{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    border-color: hsl(223, 100%, 88%);
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    padding-left: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+label{
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin: auto;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+button{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.dashboard{
+    width: 100%;
+    margin-bottom: 5rem;
+    max-width: 400px;
+}
+
+.socials button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid;
+    border-color: black;
+    padding: 0.25rem;
+}
+
+.copyright{
+    color: hsl(0, 0%, 59%);
+    float: bottom;
+    margin: auto;
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px){
+    .user-input{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    input{
+        margin-right: 2rem;
+    }
+
+    button{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
